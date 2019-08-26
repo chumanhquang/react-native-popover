@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   StyleSheet,
   Dimensions,
@@ -34,10 +34,6 @@ function Rect(x, y, width, height) {
 }
 
 var Popover = React.createClass({
-  propTypes: {
-    isVisible: PropTypes.bool,
-    onClose: PropTypes.func,
-  },
   getInitialState() {
     return {
       contentSize: {},
